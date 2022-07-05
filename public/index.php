@@ -22,10 +22,6 @@
             </ul>
         </nav> -->
 
-        <!-- profile -->
-        <!-- <div class="profile-content">
-            <img src="" alt="">
-        </div> -->
 
         <!-- content -->
         <div class="content">
