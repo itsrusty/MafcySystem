@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- validar sesión -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,16 +12,14 @@
     <link rel="shortcut icon" href="./images/the_hare_by_markusolsonart_dez7pae.png" type="image/x-icon">
     <!-- css -->
     <link rel="stylesheet" href="./css/index.css">
-    <!-- icons -->
-    <script src="https://kit.fontawesome.com/0f2756a855.js" crossorigin="anonymous"></script>
-    <!-- ligthbox -->
     <title>Marcia Servin</title>
 </head>
 <body>
         <nav class="navigator">
             <ul class="list-items">
                 <button class="darkmode">Tema <i class="fa-solid fa-moon"></i></button>
-                <a href="./login.php" class="sesion">Sesión</a>
+                <a href="./upload.process.php" class="sesion">Subir</a>
+                <a href="../controller/delete.php" class="sesion">Borrar</a>
             </ul>
         </nav>
 
@@ -29,8 +27,8 @@
         <div class="content">
             <h1 id="title" class="bigtext">Marcia Servin<br><span class="small">Artista y tatuadora</span></h1> 
         </div>  
-          <!-- php content-->
 
+        <!-- php content-->
         <div class="container">
             <?php   
                  include("../controller/conexbd.php");    
@@ -40,20 +38,17 @@
                 while ($fila = mysqli_fetch_array($result)) {
             ?>
             <div class="tech-box">
-                <img src="<?php echo $fila['ruta'];?>" alt="">
+                <img id="image" src="<?php echo $fila['ruta'];?>" alt="">
             </div>
-            <!-- close keys -->
             <?php
                 }
             ?>
         </div>  
 
-        <footer class="footer">
-            <span class="copy">Mafcy, Copyright © 2022 </span>
-        </footer>
 
     <!-- scripts -->
-    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-    <script src="../model/app.js"></script>
+         <!-- <script src="../model/app.js"></script> -->
+    <!-- <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script> -->
+    <!-- <script src="../lightbox2-2.11.3/dist/js/lightbox-plus-jquery.min.js"></script> -->
 </body>
 </html>

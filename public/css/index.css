@@ -19,7 +19,23 @@ body{
     border: none;
     padding: 10px;
     border-radius: 10px;
+    cursor: pointer;
 }
+
+.navigator .list-items .sesion{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    padding: 6.5px;
+}
+
+button:active, .sesion:active{
+    transform: scale(.9);
+}
+
 
 .content{
     /* display: flex; */
@@ -67,9 +83,10 @@ body{
 }
 
 .tech-box{
-    width: 400px;
-    height: 400px;
+    width: 420px;
+    height: 420px;
     padding: 4px 10px;
+    overflow: hidden;
 }
 
 .tech-box img{
@@ -84,4 +101,12 @@ body{
 .tech-box img:hover{
     background-color: gray;
     opacity: .8;
+}
+
+footer{
+    margin: 0px 10px;
+}
+
+footer .copy{
+    color: lightgray;
 }

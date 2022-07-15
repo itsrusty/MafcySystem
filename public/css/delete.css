@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.table{
+    width: 800px;
+    height: 600px;
+    background: lightgray;
+    margin: 100px auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table table{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.table table th{
+    padding: 10px;
+}
+
+.table table td{
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 10px;
+}
+
+input[type="submit"]{
+    border: none;
+    border-radius: 5px;
+    background: red;
+    outline: none;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+    left: 10px;
+    color: #fff;
+}
+
+input[type="submit"]:active{
+    transform: scale(.9);
+}
+
+input[type="submit"]:hover{
+    background-color: rgb(243, 87, 87);
+}
